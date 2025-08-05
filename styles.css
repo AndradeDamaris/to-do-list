@@ -2,18 +2,18 @@
 
 @font-face {
   font-family: "pixelada";
-  src: url('./Minecraft.ttf') format('truetype');
+  src: url("./Minecraft.ttf") format("truetype");
   font-weight: normal;
   font-syle: normal;
 }
 
-:root{
+:root {
   --green-background: #53733c;
-  --green-button:#b6c8aa;
-  --white-background: #F5F4E3;
+  --green-button: #b6c8aa;
+  --white-background: #f5f4e3;
   --border-button: #293122;
-  --border-div: #A5B696;
-  --pixel-font-family: 'pixelada', arial, sans-serif;
+  --border-div: #a5b696;
+  --pixel-font-family: "pixelada", arial, sans-serif;
 }
 
 * {
@@ -27,7 +27,7 @@ body {
   height: 100vh;
 }
 
-.input-area{
+.input-area {
   display: flex;
   width: 90vw;
   height: 200px;
@@ -35,7 +35,7 @@ body {
   gap: 55px;
 }
 
-.to-do-area{
+.to-do-area {
   display: flex;
   flex-direction: column;
   gap: 5px;
@@ -89,7 +89,7 @@ img {
 .button {
   width: 150px;
   height: 50px;
-  font-family: 'pixelada', arial; serif;
+  font-family: "pixelada", arial, serif;
   font-size: 1.5em;
   color: white;
   background-color: var(--green-button);
@@ -101,12 +101,12 @@ img {
   transition: 0.1s;
 }
 
-.button:active{
+.button:active {
   transform: translatey(10%);
-   box-shadow: 0 0 0 #232a1db9;
+  box-shadow: 0 0 0 #232a1db9;
 }
 
-button:hover{
+button:hover {
   cursor: pointer;
 }
 
@@ -114,7 +114,7 @@ button:hover{
   display: none;
 }
 
-#to-do-section{
+#to-do-section {
   width: 100vw;
   height: 100vh;
   display: none;
@@ -122,7 +122,6 @@ button:hover{
   align-items: center;
   justify-content: center;
   gap: 20px;
-
 }
 
 .date {
@@ -135,22 +134,20 @@ button:hover{
   align-items: center;
   gap: 15px;
 
-  box-shadow:  inset 0 0 0 0.3em var(--border-div);
+  box-shadow: inset 0 0 0 0.3em var(--border-div);
   border-radius: 20px;
   font-family: var(--pixel-font-family);
 }
 
-
-.day{
+.day {
   width: 100px;
   height: 100px;
-  background-color: var(--green-background) ;
+  background-color: var(--green-background);
   border-radius: 50%;
   position: relative;
 }
 
-.day-date{
-  
+.day-date {
   color: white;
   font-size: 3em;
   position: absolute;
@@ -158,20 +155,20 @@ button:hover{
   right: 21%;
 }
 
-.week{
+.week {
   font-size: 1.5em;
 }
 
-.month{
+.month {
   font-size: 1.2em;
 }
 
-.progress{
+.progress {
   width: 100%;
   height: 100px;
   background-color: var(--white-background);
   border-radius: 20px;
-  box-shadow:  inset 0 0 0 0.3em var(--border-div);
+  box-shadow: inset 0 0 0 0.3em var(--border-div);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -180,21 +177,21 @@ button:hover{
   position: relative;
 }
 
-.p-progress{
+.p-progress {
   font-size: 1.5em;
   font-family: var(--pixel-font-family);
 }
 
-#bar{
+#bar {
   width: 80%;
   height: 30px;
-  background-color: #BCCAA5 ;
+  background-color: #bccaa5;
   border-radius: 30px;
   position: relative;
   z-index: 1;
 }
 
-#progress-bar{
+#progress-bar {
   position: absolute;
   width: 50%;
   height: 100%;
@@ -205,7 +202,7 @@ button:hover{
   z-index: 2;
 }
 
-.to-do{
+.to-do {
   width: 100%;
   height: 75px;
   display: flex;
@@ -213,7 +210,7 @@ button:hover{
   align-items: center;
 }
 
-#to-do-input{
+#to-do-input {
   width: 80%;
   height: 55px;
   border-radius: 50px;
@@ -229,11 +226,11 @@ button:hover{
 }
 
 #to-do-input:focus {
-  outline-color: #4CAF50;
+  outline-color: #4caf50;
   box-shadow: 0 0 5px #4caf5080;
 }
 
-.add-task{
+.add-task {
   width: 10%;
   height: 60px;
   border-radius: 25px;
@@ -244,32 +241,27 @@ button:hover{
   color: white;
 }
 
-
-.res-area{
-  
+.res-area {
   width: 90vw;
   max-width: 1096px;
-  height: 55% ;
+  height: 55%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
 
-
-
-.res{
+.res {
   background-color: var(--white-background);
   width: 100%;
   height: 82%;
-  box-shadow:  inset 0 0 0 0.3em var(--border-div);
+  box-shadow: inset 0 0 0 0.3em var(--border-div);
   border-radius: 20px;
   overflow-y: auto;
-
 }
 
-ul{
-  margin-top: 20px  ;
+ul {
+  margin-top: 20px;
   list-style: square inside;
   display: flex;
   flex-direction: column;
@@ -279,28 +271,25 @@ ul{
   inset: none;
 }
 
-label:hover{
+label:hover {
   cursor: pointer;
-
 }
 
-input[type="checkbox"]{
+input[type="checkbox"] {
   appearance: none;
-} 
+}
 
-input[type="checkbox"]:checked + label{
+input[type="checkbox"]:checked + label {
   text-decoration: line-through;
-
 }
 
 li {
   width: 90%;
   padding: 0;
   margin: 0;
-} 
+}
 
 #msg {
- 
   font-family: arial, sans-serif;
   font-size: 1em;
   color: var(--border-button);
@@ -308,7 +297,7 @@ li {
   text-align: center;
 }
 
-#res-section{
+#res-section {
   width: 100vw;
   height: 100vh;
   display: none;
@@ -318,7 +307,7 @@ li {
   gap: 20px;
 }
 
-.p-final{
+.p-final {
   font-family: var(--pixel-font-family), Arial, Helvetica, sans-serif;
   font-weight: normal;
   font-size: 1.2em;
