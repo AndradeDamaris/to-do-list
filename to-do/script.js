@@ -186,13 +186,13 @@ function endDay() {
     let img = document.createElement("img");
 
     if (allComplete === 100) {
-      img.src = "res2.png";
+      img.src = "files/res2.png";
 
       textRes.innerText = "Congratulations!";
     } else {
       textRes.innerText = "Keep Going!";
 
-      img.src = "res.png";
+      img.src = "files/res.png";
     }
 
     imgContainer.appendChild(img);
